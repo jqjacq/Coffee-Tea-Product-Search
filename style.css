@@ -1,0 +1,220 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(227, 251, 227);
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+footer {
+    text-transform: uppercase;
+}
+.introcontainer {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.sublinks {
+    text-decoration: none;
+    margin-right: 15px;
+    float: left;
+    color: black;
+}
+.searchbar {
+    float: right;
+    margin: 2px;
+    height: 15px;
+}
+.sublinks:hover {
+    color: green;
+    text-transform: uppercase;
+}
+.sublinks:active {
+    color: green;
+    text-transform: uppercase;
+}
+.coffeetea {
+    display: list-item;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.aboutdetail {
+    padding-left: 50px;
+    font-size: 20px;
+}
+.allimage {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.buy {
+    text-align: center;
+    margin-left: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px;
+}
+.buy:hover, :active {
+    font-weight: bold;
+}
+.buy:active {
+    transform: translateY(-4px);
+}
+.aboutheadline {
+    font-size: 40px;
+    background-color: rgb(196, 237, 197);
+    padding-left: 20px;
+    margin: 5px 50px;
+}
+.aboutimage {
+    width: 25%;
+    padding: 20px 10px 0 75px;
+}
+#headline {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background-color: rgb(255, 255, 224, 0.3);
+    width: 100%;
+    padding: 20px;
+}
+#aboutdescription {
+    display: flex;
+}
+#cover {
+    z-index: -1;
+}
+#frontimage {
+    width: 100%;
+}
+#links {
+    list-style-type: none;
+    justify-content:start;
+}
+#list {
+    column-count: 3;
+}
+#how {
+    float: right;
+    margin-right: 70px;
+}
+#contacts {
+    display: none;
+    margin-left: 50px
+}
+#copyright {
+    float: right;
+    overflow: hidden;
+}
+#number {
+    text-align: left;
+    margin-left: 15px;
+}
+#submit {
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 320px) {
+    input {
+        width: 75px;
+    }
+    .aboutheadline {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }    
+    .aboutimage {
+        display: none;
+    }
+    .allimage {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+    .buy {
+        padding: 1px;
+        font-size: 8px;
+    }
+    .coffeetea {
+        font-size: 10px;
+    }
+    #contacts {
+        font-size: 10px;
+        display: block;
+    }
+    #headline {
+        font-size: 15px;
+    }
+    #list {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        text-transform: none;
+        font-size: 8px;
+    }
+    input {
+        width: 100px;
+    }
+    .aboutdetail {
+        font-size: 12px;
+    }       
+    .aboutheadline {
+        font-size: 15px;
+        padding: 0;
+    }     
+    .aboutimage {
+        display: none;
+    }    
+    .allimage {
+        width: 75px;
+        height: 75px;
+    }
+    .buy {
+        font-size: 10px;
+    }
+    #headline {
+        font-size: 20px;
+    }
+    #list {
+        font-size: 12px;
+    }
+    #contact {
+        font-size: 12;
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+    .aboutimage {
+        width: 200px;
+        height: 200px;
+    } 
+    .aboutheadline {
+        font-size: 20px;
+    }    
+    .aboutdetail {
+        padding: 5px;
+        font-size: 15px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #headline {
+        font-size: 30px;
+    }
+
+}
